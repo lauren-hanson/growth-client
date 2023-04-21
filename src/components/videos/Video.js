@@ -1,5 +1,6 @@
 
-import { VideoPlayer } from "./VideoPlayer"
+import { GrowthVideo } from "./GrowthVideo"
+
 
 export const Video = ({ label }) => {
 
@@ -10,7 +11,7 @@ export const Video = ({ label }) => {
                 <h3>{label}</h3>
             </div>
 
-            <VideoPlayer />
+            <GrowthVideo />
 
         </article>
     )
