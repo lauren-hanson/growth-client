@@ -4,7 +4,10 @@ import { Video } from "../components/videos/Video"
 import { EducationVideo } from "../components/videos/EducationVideo"
 import { CultureVideo } from "../components/videos/CultureVideo"
 import { InnovationVideo } from "../components/videos/InnovationVideo"
-import { InformationForm } from "../components/forms/InformationForm"
+import { InformationEnd } from "../components/endings/InformationEnd"
+import { InnovationEnd } from "../components/endings/InnovationEnd"
+import { EducationEnd } from "../components/endings/EducationEnd"
+import { CultureEnd } from "../components/endings/CultureEnd"
 
 
 
@@ -34,7 +37,10 @@ export const ApplicationViews = () => {
                 </Route>
 
                 <Route path="/form">
-                    <Route index element={<InformationForm />} />
+                    <Route index element={<InformationEnd />} />
+                    <Route path="culture" element={<CultureEnd />} />
+                    <Route path="education" element={<EducationEnd />} />
+                    <Route path="innovation" element={<InnovationEnd />} />
                 </Route>
 
 

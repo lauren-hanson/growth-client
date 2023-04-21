@@ -9,7 +9,7 @@ export const EducationVideo = () => {
         <>
             <h2>Education Video</h2>
             <div>
-                <video src={q2} width="100%" height="300" autoPlay onEnded={() => navigate(`/form`)}/>
+                <video src={q2} width="100%" height="300" autoPlay onEnded={() => navigate(`/form/education`)}/>
             </div>
         </>
     )

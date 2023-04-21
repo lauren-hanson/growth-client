@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import q1 from "../../assets/q1.mp4"
+import "./Video.css"
 
 
 export const GrowthVideo = () => {
@@ -11,12 +12,11 @@ export const GrowthVideo = () => {
     const handleVideoEnded = () => {
         setShowButtons(true);
     };
-    
+
     return (
         <div>
-            <video src={q1} width="100%" height="300" autoPlay onEnded={handleVideoEnded} />
             {showButtons && (
-                <div>
+                <div className="content">
                     <button
                         onClick={() => navigate(`/video/education`)}>
                         Education</button>
@@ -26,6 +26,7 @@ export const GrowthVideo = () => {
                         onClick={() => navigate(`/video/innovation`)}>Innovation</button>
                 </div>
             )}
+            <video src={q1} width="100%" autoPlay onEnded={handleVideoEnded} id="background-video" />
         </div>
     );
 }

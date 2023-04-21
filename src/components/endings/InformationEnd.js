@@ -1,5 +1,5 @@
 
-export const InformationForm = () => {
+export const InformationEnd = () => {
 
     return (<>
         <h2>Information Form</h2>
