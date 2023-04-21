@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
-export const Home = () => {
+export const Home = ({ video }) => {
 
     const navigate = useNavigate()
+    // const {videoId}= useParams()
 
     return (<>
         <label for="growth">How do you want your company to grow?</label>
@@ -10,7 +11,7 @@ export const Home = () => {
                 type="text"
             />
             <button
-                onClick={() => navigate(`/videos/${video.id}`)}>
+                onClick={() => navigate(`/video/1`)}>
                 play.
             </button>
         </fieldset ></>)

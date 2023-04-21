@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import { Home } from "../components/home/Home"
+import { Video } from "../components/videos/Video"
 
 export const ApplicationViews = () => {
     return (
@@ -12,21 +13,14 @@ export const ApplicationViews = () => {
                     <Route index element={<Home />} />
 
                 </Route>
-                {/* <Route path="/categories">
-                        <Route index element={<Categories />} />
-                        <Route path="create" element={<NewCategory />} />
-                        <Route path="edit/:categoryId" element={<EditCategory />} />
-                        <Route path=":categoryId" element={<CategoryPosts />} />
-                    </Route>
-                    <Route path="/tags">
-                        <Route index element={<TagList />} />
-                        <Route path="create" element={<NewTag />} />
-                        <Route path="edit/:tagId" element={<EditTag />} />
-                    </Route>
-                    <Route path="/users">
-                        <Route index element={<UserList />} />
-                        <Route path=":userId" element={<UserDetails />} />
-                    </Route> */}
+
+                <Route path="/video/:videoId" >
+                    {/* Add Routes here */}
+
+
+                    <Route index element={<Video />} />
+
+                </Route>
 
 
             </Routes >

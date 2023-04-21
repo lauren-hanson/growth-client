@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react"
+import { Video } from "./Video"
 
 export const VideoList = () => {
 
     const [videos, setVideos] = useState([])
+    c
 
     useEffect(
         () => {
@@ -19,8 +21,8 @@ export const VideoList = () => {
         <article className="videos">
             {
                 videos.map((v) => {
-                    return <><div>{v.label} -</div>
-                        <p>{v.topic.type}</p></>
+                    <Video key={v.id} video={v} label={v.label}
+                    />
                 }
                 )}
         </article>
