@@ -19,8 +19,8 @@ export const VideoList = () => {
         <article className="videos">
             {
                 videos.map((v) => {
-                    return <div>{v.label} - 
-                        {v.topic.type}</div>
+                    return <><div>{v.label} -</div>
+                        <p>{v.topic.type}</p></>
                 }
                 )}
         </article>
