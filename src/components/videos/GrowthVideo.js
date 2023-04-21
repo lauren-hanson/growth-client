@@ -14,7 +14,6 @@ export const GrowthVideo = () => {
     
     return (
         <div>
-            <video src={q1} width="100%" height="300" autoPlay onEnded={handleVideoEnded} />
             {showButtons && (
                 <div>
                     <button
@@ -26,6 +25,7 @@ export const GrowthVideo = () => {
                         onClick={() => navigate(`/video/innovation`)}>Innovation</button>
                 </div>
             )}
+            <video src={q1} width="100%" autoPlay onEnded={handleVideoEnded} />
         </div>
     );
 }
