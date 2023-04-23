@@ -6,7 +6,7 @@ export const QuestionList = () => {
 
     useEffect( 
         () => { 
-            fetch(`http://localhost:8088/questions`)
+            fetch(`https://seashell-app-38zla.ondigitalocean.app/questions`)
                 .then(response => response.json())
                 .then((questionArray) => { 
                     setQuestions(questionArray)

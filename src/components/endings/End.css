@@ -1,0 +1,9 @@
+.endingPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18%;
+    margin: 10px;
+
+}

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import "./End.css"
 
 export const End = () => {
 
@@ -6,7 +7,7 @@ export const End = () => {
 
     useEffect(
         () => {
-            fetch(`http://localhost:8088/forms`)
+            fetch(`https://seashell-app-38zla.ondigitalocean.app/forms`)
                 .then(response => response.json())
                 .then((formArray) => {
                     setForms(formArray)
@@ -19,11 +20,12 @@ export const End = () => {
     const lastGrowthAnswer = forms[lastIndex]?.growth;
 
     return (<>
-        <div>{lastGrowthAnswer}</div>
+        <h4>{lastGrowthAnswer}</h4>
 
         <p>Thanks for playing along.</p>
-        <input
-            type="checkbox" />
-        <label>Download?</label>
+        <div>
+            <input
+                type="checkbox" />
+            <label>Download?</label></div>
     </>)
 }
