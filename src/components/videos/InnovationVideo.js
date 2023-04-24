@@ -9,7 +9,7 @@ export const InnovationVideo = () => {
         <>
             <h2>Innovation Video</h2>
             <div>
-                <video src={q4} width="100%" height="300" autoPlay onEnded={() => navigate(`/form/innovation`)} />
+                <video src={q4} width="100%" autoPlay onEnded={() => navigate(`/form/innovation`)} id="background-video"/>
             </div>
         </>
     )

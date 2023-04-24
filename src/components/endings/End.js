@@ -20,6 +20,7 @@ export const End = () => {
     const lastGrowthAnswer = forms[lastIndex]?.growth;
 
     return (<>
+        
         <h4>{lastGrowthAnswer}</h4>
 
         <p>Thanks for playing along.</p>
