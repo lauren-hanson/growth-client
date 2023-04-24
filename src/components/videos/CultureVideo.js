@@ -7,7 +7,7 @@ export const CultureVideo = () => {
 
     return (
         <>
-            <h2>Culture Video</h2>
+            <h2 className="content">Culture Video</h2>
             <div>
                 <video src={q3} width="100%" autoPlay onEnded={() => navigate(`/form/culture`)} id="background-video"/>
             </div>
