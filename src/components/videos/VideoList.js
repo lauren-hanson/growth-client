@@ -8,7 +8,7 @@ export const VideoList = () => {
 
     useEffect(
         () => {
-            fetch(`https://seashell-app-38zla.ondigitalocean.app/videos?_expand=topic`)
+            fetch(`http://localhost:8088/videos?_expand=topic`)
                 .then(response => response.json())
                 .then((videoArray) => {
                     setVideos(videoArray)

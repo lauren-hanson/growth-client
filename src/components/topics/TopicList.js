@@ -6,7 +6,7 @@ export const TopicList = () => {
 
     useEffect( 
         () => { 
-            fetch(`https://seashell-app-38zla.ondigitalocean.app/topics`)
+            fetch(`http://localhost:8088/topics`)
                 .then(response => response.json())
                 .then((topicArray) => { 
                     setTopics(topicArray)

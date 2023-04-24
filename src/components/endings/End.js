@@ -7,7 +7,7 @@ export const End = () => {
 
     useEffect(
         () => {
-            fetch(`https://seashell-app-38zla.ondigitalocean.app/forms`)
+            fetch(`http://localhost:8088/forms`)
                 .then(response => response.json())
                 .then((formArray) => {
                     setForms(formArray)
