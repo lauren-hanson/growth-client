@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import "./End.css"
 
 export const End = () => {
 
@@ -19,11 +20,12 @@ export const End = () => {
     const lastGrowthAnswer = forms[lastIndex]?.growth;
 
     return (<>
-        <div>{lastGrowthAnswer}</div>
+        <h4>{lastGrowthAnswer}</h4>
 
         <p>Thanks for playing along.</p>
-        <input
-            type="checkbox" />
-        <label>Download?</label>
+        <div>
+            <input
+                type="checkbox" />
+            <label>Download?</label></div>
     </>)
 }
