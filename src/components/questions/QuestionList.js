@@ -6,7 +6,7 @@ export const QuestionList = () => {
 
     useEffect( 
         () => { 
-            fetch(`http://localhost:8088/questions`)
+            fetch(`http://:8088/questions`)
                 .then(response => response.json())
                 .then((questionArray) => { 
                     setQuestions(questionArray)

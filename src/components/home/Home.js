@@ -18,7 +18,7 @@ export const Home = () => {
             growth: forms.growth
         }
 
-        return fetch("http://localhost:8088//forms", {
+        return fetch("http://localhost:8088/forms", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
